@@ -84,7 +84,7 @@ func main() {
 	var dev string
 	var mode string
 
-	flag.StringVar(&dev, "dev", "/dev/ttyl", "RFID read/writer serial interface device")
+	flag.StringVar(&dev, "dev", "/dev/ttyUSB0", "RFID read/writer serial interface device")
 	flag.StringVar(&mode, "mode", "read", "Application mode, one of: read, read-loop, info")
 	flag.BoolVar(&silent, "silent", false, "Skip beeps and LED flashes, reduces number of commands sent to the reader")
 	flag.Parse()
